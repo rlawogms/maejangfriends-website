@@ -101,11 +101,13 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .navbar-links a:hover { color: #16305C; border-bottom-color: #FF7A00; }
 .navbar-cta { background: #16305C; color: #fff; font-size: 13px; font-weight: 700; padding: 10px 18px; border-radius: 20px; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
 .navbar-cta:hover { background: #0f2140; }
+.navbar-badge { display: flex; align-items: center; gap: 4px; background: #FFF3E8; color: #FF7A00; font-size: 12.5px; font-weight: 700; padding: 6px 12px; border-radius: 16px; white-space: nowrap; flex-shrink: 0; }
 @media (max-width: 680px) {
   .navbar { padding: 10px 16px; }
   .navbar-brand span { display: none; }
   .navbar-links { gap: 14px; margin-left: 10px; }
   .navbar-links a { font-size: 13px; }
+  .navbar-badge { display: none; }
 }
 
 .hero {
@@ -211,6 +213,7 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <a href="#process">도입 절차</a>
     <a href="#faq">FAQ</a>
   </div>
+  <span class="navbar-badge"><i class="ti ti-map-pin"></i> 전국 문의 및 설치 가능</span>
   <a href="#consult" class="navbar-cta">상담신청</a>
 </nav>
 
