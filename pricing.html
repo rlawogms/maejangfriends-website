@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>가격 안내 - 매장프렌즈</title>
-<meta name="description" content="2인치·3인치 카드단말기, 포스세트, 포스단품의 일시불·3년 할부약정 가격을 확인하세요." />
-<meta name="keywords" content="매장프렌즈 가격, 카드단말기 가격, 포스기 가격, 포스세트 가격" />
+<meta name="description" content="2인치·3인치 카드단말기, 포스세트, 포스단품의 일시불·3년 할부약정 가격과 무인자판기 일시불·할부·렌탈 가격을 확인하세요." />
+<meta name="keywords" content="매장프렌즈 가격, 카드단말기 가격, 포스기 가격, 포스세트 가격, 무인자판기 가격, 무인자판기 렌탈" />
 <link rel="canonical" href="https://maejangfriends.co.kr/pricing.html" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="가격 안내 - 매장프렌즈" />
@@ -29,7 +29,8 @@
 {"@type":"Product","position":2,"name":"2인치 단말기(분리형)","offers":{"@type":"Offer","price":"320000","priceCurrency":"KRW"}},
 {"@type":"Product","position":3,"name":"3인치 단말기","offers":{"@type":"Offer","price":"350000","priceCurrency":"KRW"}},
 {"@type":"Product","position":4,"name":"포스세트","offers":{"@type":"Offer","price":"1100000","priceCurrency":"KRW"}},
-{"@type":"Product","position":5,"name":"포스단품","offers":{"@type":"Offer","price":"970000","priceCurrency":"KRW"}}
+{"@type":"Product","position":5,"name":"포스단품","offers":{"@type":"Offer","price":"970000","priceCurrency":"KRW"}},
+{"@type":"Product","position":6,"name":"무인자판기(일시불 구매)","offers":{"@type":"Offer","price":"8030000","priceCurrency":"KRW"}}
 ]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -82,6 +83,18 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .price-table td.price-main { font-weight: 800; color: #16305C; }
 .price-table td.price-sub { color: #FF7A00; font-weight: 700; }
 .price-note { font-size: 12.5px; color: #999; margin-top: 14px; line-height: 1.7; text-align: center; }
+
+.vending-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.vending-card { background: #F7F5F0; border: 1px solid #EDE6D6; border-radius: 14px; padding: 26px 22px; }
+.vending-card.featured { border-color: #FF7A00; background: #FFF6EE; }
+.vending-title { font-size: 16px; font-weight: 800; color: #16305C; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.vending-title i { color: #FF7A00; font-size: 18px; }
+.vending-row { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; color: #333; padding: 9px 0; border-bottom: 1px solid #EDE6D6; }
+.vending-row:last-of-type { border-bottom: none; }
+.vending-row span:first-child { color: #777; }
+.vending-row span:last-child { font-weight: 700; color: #16305C; text-align: right; }
+.vending-note { font-size: 12px; color: #999; margin-top: 14px; line-height: 1.7; }
+@media (max-width: 800px) { .vending-grid { grid-template-columns: 1fr; } }
 
 .cta-section { background: #F7F5F0; padding: 52px 32px; text-align: center; }
 .cta-section h2 { font-size: 20px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; }
@@ -182,6 +195,35 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     </table>
   </div>
   <p class="price-note">※ 위 가격은 소비자가(판매가) 기준이며, 매장 상황에 따라 적용 조건이 달라질 수 있어 정확한 견적은 상담을 통해 안내해드립니다.</p>
+</section>
+
+<section class="section" style="background:#fff;">
+  <div class="section-head" style="text-align:center;margin-bottom:32px;">
+    <div style="font-size:20px;font-weight:800;color:#1a1a1a;">무인자판기 가격 안내</div>
+    <div style="font-size:13.5px;color:#777;margin-top:8px;">일시불 구매, 할부 구매, 렌탈 중 원하시는 방식을 선택하실 수 있습니다</div>
+  </div>
+  <div class="vending-grid">
+    <div class="vending-card">
+      <div class="vending-title"><i class="ti ti-cash"></i> 일시불 구매</div>
+      <div class="vending-row"><span>자판기 금액</span><span>7,300,000원</span></div>
+      <div class="vending-row"><span>부가세(10%)</span><span>730,000원</span></div>
+      <div class="vending-row"><span>총 구매금액</span><span>8,030,000원</span></div>
+      <div class="vending-note">구매 후 자판기는 고객님 소유가 됩니다.</div>
+    </div>
+    <div class="vending-card">
+      <div class="vending-title"><i class="ti ti-calendar-time"></i> 할부 구매</div>
+      <div class="vending-row"><span>현재 월 납부금</span><span>230,000원</span></div>
+      <div class="vending-row"><span>인상 예정 월 납부금</span><span>253,800원</span></div>
+      <div class="vending-note">현재 월 23만원 기준이며, 추후 월 253,800원으로 인상될 예정입니다. 할부 종료 후 자판기는 고객님 소유가 됩니다.</div>
+    </div>
+    <div class="vending-card featured">
+      <div class="vending-title"><i class="ti ti-building-bank"></i> 렌탈</div>
+      <div class="vending-row"><span>보증금</span><span>2,000,000원</span></div>
+      <div class="vending-row"><span>월 렌탈료</span><span>250,000원~</span></div>
+      <div class="vending-row"><span>계약기간</span><span>3년</span></div>
+      <div class="vending-note">보증금은 계약 조건에 따라 반환됩니다. 개인 명의로 자산을 직접 구매하기보다 비용 처리나 자산 관리 측면에서 렌탈을 선호하는 기업·법인 고객님이 많습니다.</div>
+    </div>
+  </div>
 </section>
 
 <section class="cta-section" id="consult">
