@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>매장프렌즈 - 포스기·카드단말기·무인자판기 설치 대행</title>
 <meta name="description" content="포스기, 카드단말기, 무인자판기 도입을 한 번에. 전국 어디서나 상담부터 설치, 사후관리까지 매장프렌즈가 함께합니다." />
-<meta name="keywords" content="매장프렌즈, 포스기 설치, 카드단말기 설치, 무인자판기 설치, 매장 결제 시스템, 창업 장비" />
+<meta name="keywords" content="매장프렌즈, 포스기 설치, 카드단말기 설치, 무인자판기 설치, 매장 결제 시스템, 창업 장비, 카드단말기 교체, 업종별 포스기" />
 <link rel="canonical" href="https://maejangfriends.co.kr/" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="매장프렌즈 - 포스기·카드단말기·무인자판기 설치 대행" />
@@ -29,7 +29,9 @@
 {"@type":"Question","name":"매장프렌즈는 어떤 서비스인가요?","acceptedAnswer":{"@type":"Answer","text":"포스기, 카드단말기, 무인자판기 도입을 원하는 사장님들을 위해 상담부터 설치, 사후관리까지 대행해드리는 서비스입니다."}},
 {"@type":"Question","name":"전국 어디서나 상담이 가능한가요?","acceptedAnswer":{"@type":"Answer","text":"네, 전국 어디서나 방문 상담 및 설치가 가능합니다."}},
 {"@type":"Question","name":"장비를 하나만 도입해도 되나요?","acceptedAnswer":{"@type":"Answer","text":"네, 포스기·카드단말기·무인자판기 중 필요한 장비만 선택해서 도입하실 수 있습니다."}},
-{"@type":"Question","name":"상담 신청 후 얼마나 걸리나요?","acceptedAnswer":{"@type":"Answer","text":"상담 신청을 남겨주시면 담당자가 직접 연락드려 매장 상황에 맞는 장비와 일정을 안내해드립니다."}}
+{"@type":"Question","name":"상담 신청 후 얼마나 걸리나요?","acceptedAnswer":{"@type":"Answer","text":"상담 신청을 남겨주시면 담당자가 직접 연락드려 매장 상황에 맞는 장비와 일정을 안내해드립니다."}},
+{"@type":"Question","name":"기존에 쓰던 장비도 교체할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"네, 기존 포스기나 카드단말기를 새 장비로 교체하는 상담도 가능합니다."}},
+{"@type":"Question","name":"설치비나 이용료, 카드 수수료는 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"장비 종류와 매장 상황에 따라 달라질 수 있어, 정확한 비용은 상담을 통해 안내해드립니다."}}
 ]}
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -130,12 +132,16 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .pillar-text { font-size: 13.5px; color: #777; line-height: 1.75; }
 @media (max-width: 800px) { .pillar-grid { grid-template-columns: 1fr; } }
 
-.why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
 .why-card { text-align: center; padding: 10px; }
 .why-icon { font-size: 28px; color: #FF7A00; margin-bottom: 12px; }
 .why-title { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
 .why-text { font-size: 13px; color: #777; line-height: 1.7; }
-@media (max-width: 800px) { .why-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .why-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 500px) { .why-grid { grid-template-columns: 1fr; } }
+
+.payment-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.payment-tag { background: #F7F5F0; border: 1.5px solid #EDE6D6; color: #16305C; font-weight: 700; font-size: 13px; padding: 8px 18px; border-radius: 20px; }
 
 .step-list { display: flex; flex-direction: column; gap: 14px; max-width: 640px; margin: 0 auto; }
 .step-item { display: flex; gap: 16px; align-items: flex-start; background: #F7F5F0; border-radius: 12px; padding: 18px 20px; }
@@ -232,12 +238,57 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <div class="pillar-card">
       <div class="pillar-icon"><i class="ti ti-credit-card"></i></div>
       <div class="pillar-title">카드단말기</div>
-      <div class="pillar-text">유선·무선 카드단말기 도입 상담과 설치를 진행하며, 이후 관리 문의도 함께 도와드립니다.</div>
+      <div class="pillar-text">유선·무선·휴대형 등 매장 형태에 맞는 카드단말기 도입 상담과 설치를 진행하며, 이후 관리 문의도 함께 도와드립니다.</div>
     </div>
     <div class="pillar-card">
       <div class="pillar-icon"><i class="ti ti-device-tablet"></i></div>
       <div class="pillar-title">무인자판기</div>
       <div class="pillar-text">무인 매장·자판기 창업을 준비하는 분들을 위한 장비 상담과 설치를 진행합니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="payment" style="background:#fff;">
+  <div class="section-head">
+    <div class="section-title">다양한 결제 수단 지원</div>
+    <div class="section-sub">주요 카드사와 간편결제까지 폭넓게 사용하실 수 있습니다</div>
+  </div>
+  <div class="payment-tags">
+    <span class="payment-tag">신한카드</span>
+    <span class="payment-tag">삼성카드</span>
+    <span class="payment-tag">현대카드</span>
+    <span class="payment-tag">국민카드</span>
+    <span class="payment-tag">롯데카드</span>
+    <span class="payment-tag">하나카드</span>
+    <span class="payment-tag">우리카드</span>
+    <span class="payment-tag">BC카드</span>
+    <span class="payment-tag">카카오페이</span>
+    <span class="payment-tag">네이버페이</span>
+    <span class="payment-tag">제로페이</span>
+    <span class="payment-tag">토스페이</span>
+  </div>
+</section>
+
+<section class="section" id="industry">
+  <div class="section-head">
+    <div class="section-title">업종별 맞춤 상담</div>
+    <div class="section-sub">업종 특성에 맞는 장비 구성을 함께 고민해드립니다</div>
+  </div>
+  <div class="pillar-grid">
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="ti ti-tools-kitchen-2"></i></div>
+      <div class="pillar-title">요식업·카페</div>
+      <div class="pillar-text">주문·결제 동선이 잦은 매장에 맞는 포스기·카드단말기 구성을 상담해드립니다.</div>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="ti ti-shopping-cart"></i></div>
+      <div class="pillar-title">소매·편의점</div>
+      <div class="pillar-text">재고 관리와 계산이 함께 이루어지는 매장에 맞는 장비 구성을 안내해드립니다.</div>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="ti ti-building-store"></i></div>
+      <div class="pillar-title">무인 매장</div>
+      <div class="pillar-text">무인자판기·무인 결제 중심 매장 창업을 준비하는 분들을 위한 상담을 진행합니다.</div>
     </div>
   </div>
 </section>
@@ -256,6 +307,11 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
       <div class="why-icon"><i class="ti ti-adjustments"></i></div>
       <div class="why-title">필요한 것만 골라서</div>
       <div class="why-text">포스기·카드단말기·무인자판기 중 필요한 장비만 선택해 도입할 수 있습니다.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="ti ti-report-money"></i></div>
+      <div class="why-title">투명한 안내</div>
+      <div class="why-text">설치비·이용료·카드 수수료는 매장 상황에 따라 달라질 수 있어, 상담을 통해 정확히 안내해드립니다.</div>
     </div>
     <div class="why-card">
       <div class="why-icon"><i class="ti ti-headset"></i></div>
@@ -298,6 +354,18 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <details class="faq-item">
       <summary>상담 신청 후 얼마나 걸리나요?</summary>
       <div class="faq-answer">상담 신청을 남겨주시면 담당자가 직접 연락드려 매장 상황에 맞는 장비와 일정을 안내해드립니다.</div>
+    </details>
+    <details class="faq-item">
+      <summary>기존에 쓰던 장비도 교체할 수 있나요?</summary>
+      <div class="faq-answer">네, 기존 포스기나 카드단말기를 새 장비로 교체하는 상담도 가능합니다. 현재 사용 중인 장비 상태를 말씀해주시면 함께 안내해드립니다.</div>
+    </details>
+    <details class="faq-item">
+      <summary>설치비나 이용료, 카드 수수료는 얼마인가요?</summary>
+      <div class="faq-answer">장비 종류와 매장 상황에 따라 달라질 수 있어, 정확한 비용은 상담을 통해 안내해드립니다.</div>
+    </details>
+    <details class="faq-item">
+      <summary>설치 후 문제가 생기면 어떻게 하나요?</summary>
+      <div class="faq-answer">설치가 끝난 이후에도 장비 이용 중 궁금한 점이나 문제가 생기면 언제든 연락 주시면 확인해드립니다.</div>
     </details>
   </div>
 </section>
