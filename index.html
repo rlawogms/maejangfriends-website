@@ -90,6 +90,8 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .pillar-title { font-size: 17px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; }
 .pillar-text { font-size: 13.5px; color: #777; line-height: 1.75; }
 @media (max-width: 800px) { .pillar-grid { grid-template-columns: 1fr; } }
+.pillar-grid-4 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+@media (max-width: 500px) { .pillar-grid-4 { grid-template-columns: 1fr; } }
 
 .why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
 .why-card { text-align: center; padding: 10px; }
@@ -165,10 +167,11 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 <nav class="navbar">
   <a href="index.html" class="navbar-brand"><img src="favicon.svg" alt="매장프렌즈"><span>매장프렌즈</span></a>
   <div class="navbar-links">
-    <a href="#service">서비스</a>
-    <a href="#why">왜 매장프렌즈</a>
-    <a href="#process">도입 절차</a>
-    <a href="#faq">FAQ</a>
+    <a href="service.html">서비스</a>
+    <a href="pricing.html">가격</a>
+    <a href="why.html">왜 매장프렌즈</a>
+    <a href="process.html">도입 절차</a>
+    <a href="faq.html">FAQ</a>
   </div>
   <span class="navbar-badge"><i class="ti ti-map-pin"></i> 전국 문의 및 설치 가능</span>
   <a href="consult.html" class="navbar-cta">상담신청</a>
@@ -184,149 +187,37 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
   </div>
 </section>
 
-<section class="section" id="service">
+<section class="section">
   <div class="section-head">
-    <div class="section-title">매장프렌즈가 도와드리는 3가지</div>
-    <div class="section-sub">필요한 장비만 선택해서 도입하실 수 있습니다</div>
+    <div class="section-title">매장프렌즈 한눈에 보기</div>
+    <div class="section-sub">자세한 내용은 각 페이지에서 확인하실 수 있습니다</div>
   </div>
-  <div class="pillar-grid">
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-cash-register"></i></div>
-      <div class="pillar-title">포스기</div>
-      <div class="pillar-text">매장 규모와 업종에 맞는 포스기 상담부터 설치, 초기 세팅까지 도와드립니다.</div>
-    </div>
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-credit-card"></i></div>
-      <div class="pillar-title">카드단말기</div>
-      <div class="pillar-text">유선·무선·휴대형 등 매장 형태에 맞는 카드단말기 도입 상담과 설치를 진행하며, 이후 관리 문의도 함께 도와드립니다.</div>
-    </div>
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-device-tablet"></i></div>
-      <div class="pillar-title">무인자판기</div>
-      <div class="pillar-text">무인 매장·자판기 창업을 준비하는 분들을 위한 장비 상담과 설치를 진행합니다.</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="payment" style="background:#fff;">
-  <div class="section-head">
-    <div class="section-title">다양한 결제 수단 지원</div>
-    <div class="section-sub">주요 카드사와 간편결제까지 폭넓게 사용하실 수 있습니다</div>
-  </div>
-  <div class="payment-tags">
-    <span class="payment-tag">신한카드</span>
-    <span class="payment-tag">삼성카드</span>
-    <span class="payment-tag">현대카드</span>
-    <span class="payment-tag">국민카드</span>
-    <span class="payment-tag">롯데카드</span>
-    <span class="payment-tag">하나카드</span>
-    <span class="payment-tag">우리카드</span>
-    <span class="payment-tag">BC카드</span>
-    <span class="payment-tag">카카오페이</span>
-    <span class="payment-tag">네이버페이</span>
-    <span class="payment-tag">제로페이</span>
-    <span class="payment-tag">토스페이</span>
-  </div>
-</section>
-
-<section class="section" id="industry">
-  <div class="section-head">
-    <div class="section-title">업종별 맞춤 상담</div>
-    <div class="section-sub">업종 특성에 맞는 장비 구성을 함께 고민해드립니다</div>
-  </div>
-  <div class="pillar-grid">
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-tools-kitchen-2"></i></div>
-      <div class="pillar-title">요식업·카페</div>
-      <div class="pillar-text">주문·결제 동선이 잦은 매장에 맞는 포스기·카드단말기 구성을 상담해드립니다.</div>
-    </div>
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-shopping-cart"></i></div>
-      <div class="pillar-title">소매·편의점</div>
-      <div class="pillar-text">재고 관리와 계산이 함께 이루어지는 매장에 맞는 장비 구성을 안내해드립니다.</div>
-    </div>
-    <div class="pillar-card">
-      <div class="pillar-icon"><i class="ti ti-building-store"></i></div>
-      <div class="pillar-title">무인 매장</div>
-      <div class="pillar-text">무인자판기·무인 결제 중심 매장 창업을 준비하는 분들을 위한 상담을 진행합니다.</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="why" style="background:#fff;">
-  <div class="section-head">
-    <div class="section-title">왜 매장프렌즈인가요</div>
-  </div>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon"><i class="ti ti-map-pin"></i></div>
-      <div class="why-title">전국 어디서나</div>
-      <div class="why-text">지역에 상관없이 전국 어디서나 방문 상담과 설치 문의가 가능합니다.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ti ti-adjustments"></i></div>
-      <div class="why-title">필요한 것만 골라서</div>
-      <div class="why-text">포스기·카드단말기·무인자판기 중 필요한 장비만 선택해 도입할 수 있습니다.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ti ti-report-money"></i></div>
-      <div class="why-title">투명한 안내</div>
-      <div class="why-text">설치비·이용료·카드 수수료는 매장 상황에 따라 달라질 수 있어, 상담을 통해 정확히 안내해드립니다.</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon"><i class="ti ti-headset"></i></div>
-      <div class="why-title">설치 이후에도 문의 가능</div>
-      <div class="why-text">설치가 끝난 이후에도 궁금한 점이나 문제가 생기면 언제든 문의하실 수 있습니다.</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="process">
-  <div class="section-head">
-    <div class="section-title">도입 절차</div>
-    <div class="section-sub">상담 신청부터 설치까지 이렇게 진행됩니다</div>
-  </div>
-  <div class="step-list">
-    <div class="step-item"><span class="step-num">1</span><span class="step-text"><strong>상담 신청</strong> — 매장 형태와 필요한 장비를 남겨주세요.</span></div>
-    <div class="step-item"><span class="step-num">2</span><span class="step-text"><strong>맞춤 안내</strong> — 담당자가 연락드려 매장 상황에 맞는 장비를 안내해드립니다.</span></div>
-    <div class="step-item"><span class="step-num">3</span><span class="step-text"><strong>설치 진행</strong> — 일정을 협의해 방문 설치를 진행합니다.</span></div>
-    <div class="step-item"><span class="step-num">4</span><span class="step-text"><strong>사후관리</strong> — 설치 이후에도 궁금한 점은 언제든 문의하실 수 있습니다.</span></div>
-  </div>
-</section>
-
-<section class="section" id="faq" style="background:#fff;">
-  <div class="section-head">
-    <div class="section-title">자주 묻는 질문</div>
-  </div>
-  <div class="faq-list">
-    <details class="faq-item">
-      <summary>매장프렌즈는 어떤 서비스인가요?</summary>
-      <div class="faq-answer">포스기, 카드단말기, 무인자판기 도입을 원하는 사장님들을 위해 상담부터 설치, 사후관리까지 대행해드리는 서비스입니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>전국 어디서나 상담이 가능한가요?</summary>
-      <div class="faq-answer">네, 전국 어디서나 방문 상담 및 설치가 가능합니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>장비를 하나만 도입해도 되나요?</summary>
-      <div class="faq-answer">네, 포스기·카드단말기·무인자판기 중 필요한 장비만 선택해서 도입하실 수 있습니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>상담 신청 후 얼마나 걸리나요?</summary>
-      <div class="faq-answer">상담 신청을 남겨주시면 담당자가 직접 연락드려 매장 상황에 맞는 장비와 일정을 안내해드립니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>기존에 쓰던 장비도 교체할 수 있나요?</summary>
-      <div class="faq-answer">네, 기존 포스기나 카드단말기를 새 장비로 교체하는 상담도 가능합니다. 현재 사용 중인 장비 상태를 말씀해주시면 함께 안내해드립니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>설치비나 이용료, 카드 수수료는 얼마인가요?</summary>
-      <div class="faq-answer">장비 종류와 매장 상황에 따라 달라질 수 있어, 정확한 비용은 상담을 통해 안내해드립니다.</div>
-    </details>
-    <details class="faq-item">
-      <summary>설치 후 문제가 생기면 어떻게 하나요?</summary>
-      <div class="faq-answer">설치가 끝난 이후에도 장비 이용 중 궁금한 점이나 문제가 생기면 언제든 연락 주시면 확인해드립니다.</div>
-    </details>
+  <div class="pillar-grid pillar-grid-4">
+    <a href="service.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-list-details"></i></div>
+      <div class="pillar-title">서비스</div>
+      <div class="pillar-text">포스기·카드단말기·무인자판기 안내</div>
+    </a>
+    <a href="pricing.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-tag"></i></div>
+      <div class="pillar-title">가격</div>
+      <div class="pillar-text">단말기·포스 소비자가 안내</div>
+    </a>
+    <a href="why.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-star"></i></div>
+      <div class="pillar-title">왜 매장프렌즈</div>
+      <div class="pillar-text">매장프렌즈가 다른 이유</div>
+    </a>
+    <a href="process.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-route"></i></div>
+      <div class="pillar-title">도입 절차</div>
+      <div class="pillar-text">상담부터 설치까지 진행 과정</div>
+    </a>
+    <a href="faq.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-help-circle"></i></div>
+      <div class="pillar-title">FAQ</div>
+      <div class="pillar-text">자주 묻는 질문 모음</div>
+    </a>
   </div>
 </section>
 
