@@ -90,7 +90,8 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
 .pillar-title { font-size: 17px; font-weight: 800; color: #1a1a1a; margin-bottom: 10px; }
 .pillar-text { font-size: 13.5px; color: #777; line-height: 1.75; }
 @media (max-width: 800px) { .pillar-grid { grid-template-columns: 1fr; } }
-.pillar-grid-4 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.pillar-grid-4 { grid-template-columns: repeat(5,1fr); }
+@media (max-width: 900px) { .pillar-grid-4 { grid-template-columns: repeat(3,1fr); } }
 @media (max-width: 500px) { .pillar-grid-4 { grid-template-columns: 1fr; } }
 
 .why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
@@ -193,6 +194,11 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <div class="section-sub">자세한 내용은 각 페이지에서 확인하실 수 있습니다</div>
   </div>
   <div class="pillar-grid pillar-grid-4">
+    <a href="faq.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="pillar-icon"><i class="ti ti-help-circle"></i></div>
+      <div class="pillar-title">FAQ</div>
+      <div class="pillar-text">자주 묻는 질문 모음</div>
+    </a>
     <a href="service.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
       <div class="pillar-icon"><i class="ti ti-list-details"></i></div>
       <div class="pillar-title">서비스</div>
@@ -212,11 +218,6 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
       <div class="pillar-icon"><i class="ti ti-route"></i></div>
       <div class="pillar-title">도입 절차</div>
       <div class="pillar-text">상담부터 설치까지 진행 과정</div>
-    </a>
-    <a href="faq.html" class="pillar-card" style="text-decoration:none;color:inherit;display:block;">
-      <div class="pillar-icon"><i class="ti ti-help-circle"></i></div>
-      <div class="pillar-title">FAQ</div>
-      <div class="pillar-text">자주 묻는 질문 모음</div>
     </a>
   </div>
 </section>
