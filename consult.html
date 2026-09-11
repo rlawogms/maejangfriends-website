@@ -118,6 +118,13 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
     <form id="consultForm">
       <input type="text" name="상호명" placeholder="상호명 또는 성함" required />
       <input type="tel" name="연락처" placeholder="연락처 (010-0000-0000)" required />
+      <select name="업종" required>
+        <option value="" disabled selected>업종 선택</option>
+        <option>요식업·카페</option>
+        <option>소매·편의점</option>
+        <option>무인 매장</option>
+        <option>기타</option>
+      </select>
       <select name="관심장비" required>
         <option value="" disabled selected>관심 장비 선택</option>
         <option>포스기</option>
@@ -125,7 +132,26 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
         <option>무인자판기</option>
         <option>전체 상담 희망</option>
       </select>
-      <input type="text" name="지역" placeholder="매장 지역 (예: 서울 강남구)" required />
+      <select name="권역" required>
+        <option value="" disabled selected>지역(시·도) 선택</option>
+        <option>서울특별시</option>
+        <option>경기도</option>
+        <option>인천광역시</option>
+        <option>강원특별자치도</option>
+        <option>충청북도</option>
+        <option>충청남도</option>
+        <option>세종특별자치시</option>
+        <option>대전광역시</option>
+        <option>전북특별자치도</option>
+        <option>전남광주통합특별시</option>
+        <option>경상북도</option>
+        <option>경상남도</option>
+        <option>대구광역시</option>
+        <option>부산광역시</option>
+        <option>울산광역시</option>
+        <option>제주특별자치도</option>
+      </select>
+      <input type="text" name="지역" placeholder="세부 지역 (예: 강남구)" required />
       <button type="submit" class="consult-submit">📞 상담 신청하기</button>
     </form>
     <div id="consultResult" style="display:none;"></div>
@@ -176,8 +202,9 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #fff
         subject: '[매장프렌즈] 📋 상담 신청이 접수됐습니다',
         '상호/성함': f.querySelector('[name="상호명"]').value,
         '연락처': f.querySelector('[name="연락처"]').value,
+        '업종': f.querySelector('[name="업종"]').value,
         '관심 장비': f.querySelector('[name="관심장비"]').value,
-        '매장 지역': f.querySelector('[name="지역"]').value,
+        '매장 지역': f.querySelector('[name="권역"]').value + ' ' + f.querySelector('[name="지역"]').value,
         '신청 시각': new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }),
         '신청 경로': 'maejangfriends.co.kr/consult.html'
       })
